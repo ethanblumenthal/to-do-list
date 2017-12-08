@@ -107,3 +107,7 @@ html, body {
   .strike {
     text-decoration: line-through;
   }
+
+  .yellow {
+    color: #ffcc00;
+  }
