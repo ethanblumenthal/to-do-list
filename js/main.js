@@ -11,3 +11,8 @@ $form.submit(function(evt) {
     $newItem.slideDown('slow');    
     $input.val('');
 });
+
+$('.list input').click(function() {
+    $(this).parent().toggleClass('strike');
+});
+

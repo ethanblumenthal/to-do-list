@@ -103,3 +103,7 @@ html, body {
     background: rgba(0,129,255,0.95);
     cursor: pointer;
   }
+
+  .strike {
+    text-decoration: line-through;
+  }
