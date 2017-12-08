@@ -1,7 +1,6 @@
 var $input = $('#todo');
 var $list = $('.list');
 var $form = $('.form');
-var $btn = $('.btn');
 
 $form.submit(function(evt) {
     evt.preventDefault();
@@ -12,10 +11,16 @@ $form.submit(function(evt) {
     $input.val('');
 });
 
-$('.list').on('click', 'input', function() {
+$list.on('click', 'input', function() {
     $(this).parent().toggleClass('strike');
 });
 
-$('.list').on('click', '.glyphicon-star', function() {
+$list.on('click', '.glyphicon-star', function() {
     $(this).toggleClass('yellow');
-})
+});
+
+$list.on('click', '.glyphicon-remove', function() {
+    $(this).parent().slideUp('slow', function() {
+        $(this).remove();
+    });
+});
