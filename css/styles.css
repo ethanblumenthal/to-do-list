@@ -104,10 +104,6 @@ html, body {
     cursor: pointer;
   }
 
-  .strike {
+  .list p.completed span {
     text-decoration: line-through;
-  }
-
-  .yellow {
-    color: #ffcc00;
   }
